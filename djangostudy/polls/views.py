@@ -18,13 +18,13 @@ def vote(request, question_id):
         selected_choice = p.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
         # 설문투표폼을 보여준다
-        return render(request, 'polls/detail.html', {'question':p, 'errormessage': "You didn't selet a choice", })
+        return render(request, 'polls/detail.html', {'question':p, 'error_message': "You didn't selet a choice", })
 
     else:
         selected_choice.votes += 1
         selected_choice.save()
         #POST데이터를 정상적으로 처리하였으면, 항상 HttpResponseRedirect를 반환하여 리다이렉션 처리함
-        return HttpResponseRedirect(reverse('polls:results', arg=(p.id)))
+        return HttpResponseRedirect(reverse('polls:results', args=(p.id,)))
 
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
