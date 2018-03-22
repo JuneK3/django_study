@@ -1,2 +1,2 @@
 # hi-arc djangostudy 2018
-# project : mystagram (instagram구현)
+# project goal : mystagram (instagram구현)
