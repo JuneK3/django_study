@@ -1,4 +1,4 @@
-#### HI-ARC Djangostudy 2018
-#### project goal : mystagram (instagram구현)
-#### Nomadgram 완성후 따로 진행, 추후 Backend에 GraphQL적용
-#### 교재: Django로 배우는 쉽고 빠른 웹개발
+> **HI-ARC Djangostudy 2018**
+
+- 최종 목표 : 개인 블로그 및 포트폴리오 개발 후 배포까지
+- 교재: Django로 배우는 쉽고 빠른 웹개발(기본)
